@@ -38,7 +38,7 @@ In this notebook, we report the code related to the E2E approach in our paper [[
 In this notebook, we report the code related to the hybrid approach in our paper [[1]](#ourpaper), under Scenario II (Scenario I).
 
 * *Folders*:
-  - Trained_models_ScenarioI: it contains .npy variables that store the achieved spectral efficiencies under Scenario I and that can be  
+  - Trained_models_ScenarioI: it contains .npy variables that store the achieved spectral efficiencies under Scenario I and that can be      used to generate the plots.
   - Traind_models_ScenarioII: this folder contains the trained neural network models for Scenario II. It also contains .npy variables 
     that store the achieved spectral efficiencies under Scenario II and that can be used to generate the plots.
   
