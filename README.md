@@ -38,11 +38,11 @@ In this notebook, we report the code related to the E2E approach in our paper [[
 In this notebook, we report the code related to the hybrid approach in our paper [[1]](#ourpaper), under Scenario II (Scenario I).
 
 * *Folders*:
-  - Trained_models_ScenarioI: it contains .npy variables that store the achieved spectral efficiencies under Scenario I and that can be      used to generate the plots.
-  - Traind_models_ScenarioII: this folder contains the trained neural network models for Scenario II. It also contains .npy variables 
+  - Trained_models_ScenarioI_var: it contains .npy variables that store the achieved spectral efficiencies under Scenario I and that can be      used to generate the plots.
+  - Traind_models_ScenarioII_var: this folder contains the trained neural network models for Scenario II. It also contains .npy variables 
     that store the achieved spectral efficiencies under Scenario II and that can be used to generate the plots.
   
-Note: the datasets for training and testing the neural network models are currently not available in this repository. However, the reader can use the code in *radio_data* folder to generate the datasets. Also, the trained models for Scenario I are not available in this repository due to storage limitations. A link to an external storage with the datasets and the trained models will be provided soon.
+Note: the datasets for training and testing the neural network models are available at: https://kth.box.com/s/tcd7y7rg3yau75kctw3regmyns8kfkr6 in the folder *Datasets*. The trained neural networks models are available at the same link, in the folder *Trained_models_ScenarioI* and *Trained_models_ScenarioII*. 
 
 ## References
 <a id='ourpaper'></a> [1] "Wireless link adaptation - a hybrid data-driven and model-based approach", Lissy Pellaco, Vidit Saxena, Mats Bengtsson, Joakim Jaldén. Submitted to WCNC 2020.
