@@ -186,3 +186,10 @@ def flatten_axis( data ):
         reshaped_data[ N * p : N * ( p + 1 ), :] = data[:, :, p] 
     return reshaped_data
 
+def flatten_snr_axis( data ):
+    N, M, P = data.shape
+    reshaped_data  = np.ndarray( [ N * P, M ] )
+    for p in range( P ):
+        reshaped_data[ N * p : N * ( p + 1 ), :] = data[:, :, p] 
+    return reshaped_data
+
