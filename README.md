@@ -26,7 +26,7 @@ Here below, we list the files the reader can find in the repository.
 In this notebook we simulate a realistic LTE channel (in Part 1) and we perform channel prediction on the basis of the channel history, by applying Wiener filtering (in Part 2). The main aim is to let the reader familiarize with Wiener filter prediction applied to an LTE channel. The reader can explore the code, change various channel and filtering parameters, and see the effects on the prediction.
 
 * *Plotting_the_results - Scenario_I (Scenario_II).ipynb*.
-In this notebook, the reader can reproduce the plots of the paper, under Scenario I (Scenario II). This notebook assumes that there are trained neural network models to load and directly test. In this repository such trained models are not available due to storage limitations, but they can be found at this link  https://kth.box.com/s/tcd7y7rg3yau75kctw3regmyns8kfkr6, under the folder Trained_models_ScenarioI (Trained_models_ScenarioII). The test datasets can also be found at the same link, in the folder *Datasets*. By setting the variable 'load_from_memory = True', the plots of the paper can be displayed by loading the .npy variables contained in the folder Trained_models_ScenarioI_var(Trained_models_ScenarioII_var).
+In this notebook, the reader can reproduce the plots of the paper, under Scenario I (Scenario II). This notebook assumes that there are trained neural network models to load and directly test. In this repository the trained models under Scenario I are available in the folder *Trained_models_ScenarioI*. The trained models under Scenario II are not available due to storage limitations, but they can be found at this link  https://kth.box.com/s/tcd7y7rg3yau75kctw3regmyns8kfkr6, under the folder Trained_models_ScenarioII. The test datasets can also be found at the same link, in the folder *Datasets*. By setting the variable 'load_from_memory = True', the plots of the paper can be displayed by loading the .npy variables contained in the folder Trained_models_ScenarioI_var(Trained_models_ScenarioII_var).
 
 * *Delay_Blind_appraoch - Scenario_I (Scenario_II).ipynb*.
 In this notebook, we report the code related to the delay-blind approach in our paper [[1]](#ourpaper), under Scenario I (Scenario II).
@@ -38,6 +38,7 @@ In this notebook, we report the code related to the E2E approach in our paper [[
 In this notebook, we report the code related to the hybrid approach in our paper [[1]](#ourpaper), under Scenario I (Scenario II).
 
 * *Folders*:
+- Trained_models_ScenarioI: it contains the trained models under Scenario I
   - Trained_models_ScenarioI_var: it contains .npy variables that store the achieved spectral efficiencies under Scenario I and that can be used to generate the plots.
   - Traind_models_ScenarioII_var: tit contains .npy variables that store the achieved spectral efficiencies under Scenario II and that can be used to generate the plots.
   
