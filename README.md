@@ -12,7 +12,8 @@ In this repository, the reader can investigate and explore the three link adapta
 The hybrid approach, the end-to-end appraoch and the delay-blind appraoch are applied to a simulated LTE link operating over an industry-standard radio channel model [[2]](#channel_model). We work with the complex-valued channel in the frequency domain, with 72 OFDM subcarriers. We represent the channel as a real-valued vector by stacking the real and the imaginary parts. 
 We assume that the channel coefficients evolve as a Gaussian process and we assume they remain constant during each LTE subframe of 1 ms duration. Refer to the following table for all the simulation parameters.
 
-![table_param](figures/table_param.png)
+
+<img src="(figures/table_param.png" width="200" height="200">
 
 The base station can select 29 different MCSs, listed in the followig table:
 
