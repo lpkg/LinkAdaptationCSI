@@ -18,11 +18,11 @@ In this repository, the reader can investigate and explore the three link adapta
 - *Scenario II* -- we assume that the **signal-to-noise ratio** of the channel and the **relative velocity** between the BS and the mobile user equipment **are not known**
 
 The hybrid approach, the end-to-end appraoch and the delay-blind appraoch are applied to a simulated LTE link operating over an industry-standard radio channel model [[2]](#channel_model). We work with the complex-valued channel in the frequency domain, with 72 OFDM subcarriers. We represent the channel as a real-valued vector by stacking the real and the imaginary parts. 
-We assume that the channel coefficients evolve as a Gaussian process and we assume they remain constant during each LTE subframe of 1 ms duration. Refer to the following table for all the simulation parameters.
+We assume that the channel coefficients evolve as a Gaussian process and we assume they remain constant during each LTE subframe of 1 ms duration. Refer to the Table I for all the simulation parameters.
 
 ![](figures/table_param_2.png)
 
-The base station can select 29 different MCSs, listed in the followig table:
+The base station can select 29 different MCSs, listed in the Table II:
 
 ![](figures/table_MCS_2.png)
 
