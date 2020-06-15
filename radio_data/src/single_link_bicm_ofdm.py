@@ -18,8 +18,10 @@ def simulate(transport_block_size,
              snr_db, 
              channel_coeff_freq_domain_np):
 
-    channel_coeff_freq_domain_str = ';'.join([' '.join([str(c).replace('j','i').replace('(','').replace(')','') for c in r]) for r in channel_coeff_freq_domain_np])
-    channel_coeff_freq_domain = itpp.cmat(channel_coeff_freq_domain_str)
+    #channel_coeff_freq_domain_str = ';'.join([' '.join([str(c).replace('j','i').replace('(','').replace(')','') for c in r]) for r in channel_coeff_freq_domain_np])
+    #channel_coeff_freq_domain = itpp.cmat(channel_coeff_freq_domain_str)
+    
+    channel_coeff_freq_domain = itpp.numpy_array_to_mat( channel_coeff_freq_domain_np )
 
     nrof_subframe_ofdm_symbols = 12
     
@@ -59,9 +61,8 @@ def simulate(transport_block_size,
     received_signal_freq_domain = itpp.elem_mult_mat(transmit_signal_freq_domain, channel_coeff_freq_domain)
        
     # Add receiver noise
-    noise_std_dev = np.sqrt(1.0 / pow(10, 0.1 * snr_db)) # Signal and channel power is normalized to 1 
-    received_signal_freq_domain_noisy = received_signal_freq_domain + noise_std_dev * itpp.randn_c(received_signal_freq_domain.rows(),
-                                                                                                   received_signal_freq_domain.cols())
+    noise_std_dev = itpp.math.sqrt(1.0 / pow(10, 0.1 * snr_db)) # Signal and channel power is normalized to 1 
+    received_signal_freq_domain_noisy = received_signal_freq_domain + noise_std_dev * itpp.randn_c(received_signal_freq_domain.rows(), received_signal_freq_domain.cols())
     
     #--------- RECEIVER PROCESSING ----------
     
@@ -111,6 +112,6 @@ def error_counter(blocks_in, blocks_out, blocksize):
             
     block_error_ratio = float(nrof_errors) / float(nrof_blocks)
     
-    block_success_np = np.fromstring( block_success.__str__()[1:-1], dtype=np.int, sep=', ')
+    block_success_np = np.array( block_success )
     
     return (block_error_ratio, block_success_np)
