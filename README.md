@@ -35,7 +35,7 @@ In order to run the code in this repository in your own computation environment 
 
 ## Quick setup 
 
-`chmod +x ./install_dependencies.sh`
+`chmod +x ./install_dependencies.sh`  
 `./install_dependencies.sh`
 
 ## Navigating through the repository
