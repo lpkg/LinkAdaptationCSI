@@ -33,6 +33,10 @@ In order to run the code in this repository in your own computation environment 
 * `Python 3` ( for reference we use Python 3.6.7 ), with the following packages:`numpy`, `matplotlib`,`scipy`,`time`,`ray`, `os`,`tabulate`,`keras`,`tensorflow`,`py-ittp`(install from https://github.com/vidits-kth/py-itpp).
 * `Jupyter` ( for reference we use version 5.7.8 )
 
+## Quick setup 
+
+`chmod +x ./install_dependencies.sh`  
+`./install_dependencies.sh`
 
 ## Navigating through the repository
 Here below, we list the files the reader can find in the repository.

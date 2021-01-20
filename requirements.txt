@@ -1,0 +1,4 @@
+pybind11
+tabulate
+tensorflow==2.2.0
+Keras==2.2.0
