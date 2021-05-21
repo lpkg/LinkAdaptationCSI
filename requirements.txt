@@ -1,4 +1,4 @@
 pybind11
 tabulate
-tensorflow==2.4.0
+tensorflow==2.5.0
 Keras==2.2.0
